@@ -6,7 +6,8 @@
     - Use `git log --decorate` to explore the structure of commits.
 
 ```
-
+* master
+  math
 
 ```
 
