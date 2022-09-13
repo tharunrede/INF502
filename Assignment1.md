@@ -6,13 +6,20 @@
     - Use `git log --decorate` to explore the structure of commits.
 
 ```
+==>For "git branch" command:
 * master
   math
+  
+  This explains that we are currently in the master branch
+  
+==>For "git checkout" command:
 
+since we are already on the master branch lets checkout the math branch.
+>> git checkout math
+Switched to branch 'math'
 
+==> For "git log --decorate" command 
 
-
-E:\FALL22\INF 502 SDM\Assignment1\handson>git log  --decorate
 commit e3c629dd524712aedea96d7dbaad1c50d12b5b5e (HEAD -> math)
 Author: Igor Steinmacher <igorsteinmacher@gmail.com>
 Date:   Wed Aug 14 23:13:48 2019 -0700
@@ -35,15 +42,50 @@ Date:   Wed Aug 14 23:08:47 2019 -0700
 
 2. Try `git log --graph --all` to see the commit tree. Paste the result here and write a paragraph to provide an interpretation of what you found.
 ```
+==> For "git log --graph --all" command:
 
+* commit 18931d12a8be7cac049b73c6bc8136e9482f3371 (master)
+| Author: Igor Steinmacher <igorsteinmacher@gmail.com>
+| Date:   Wed Aug 14 23:15:28 2019 -0700
+|
+|     Making a small change here
+|
+| * commit e3c629dd524712aedea96d7dbaad1c50d12b5b5e (HEAD -> math)
+|/  Author: Igor Steinmacher <igorsteinmacher@gmail.com>
+|   Date:   Wed Aug 14 23:13:48 2019 -0700
+|
+|       Adding some more knowledge to the function
+|
+* commit 654b490a181dedf82dd6deda5f9848d6cca05918
+| Author: Igor Steinmacher <igorsteinmacher@gmail.com>
+| Date:   Wed Aug 14 23:12:14 2019 -0700
+|
+|     Added a draft of A.py
+|
+* commit 2dfb02c3f9383d6c3b2695c99e175d8b85f594a1
+  Author: Igor Steinmacher <igorsteinmacher@gmail.com>
+  Date:   Wed Aug 14 23:08:47 2019 -0700
+
+       Creating all files (all empty)
+
+The "git log --graph --all" is used to list all the logs committed to a repository.
+
+By observing the above graph of logs, first all the files are created and they are empty
+Next, the file A.py is added with some content
+Next, a branch has been created named "math", and some more content has been added
+Fibally we returned to the master branch againn to make some changes..
 
 ```
 
 3. Use `git diff BRANCH_NAME` to view the differences from a branch and the current branch. Summarize the difference from master to the other branch.
 
 ```
-
-
+==> Using the command "git diff master"
+ This command gives out the list of files and the content in the files.
+ Since the B.py has no content in it as of now it just displays the file name and no content.
+ 
+ ==> Using the command "git diff math"
+ This command gives out nothing because the math  branch has no commits as of now.
 ```
 
 4. Write a command sequence to merge the non-master branch into `master`.
