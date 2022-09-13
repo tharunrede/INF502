@@ -92,6 +92,9 @@ Fibally we returned to the master branch againn to make some changes..
 
 ```
 
+Step 1: git checkout master
+Step 2: git merge non_master_branch
+
 
 ```
 
@@ -99,7 +102,11 @@ Fibally we returned to the master branch againn to make some changes..
 5. Write a command (or sequence) to (i) create a new branch called `math` (from the `master`) and (ii) change to this branch.
 
 ```
+$ git branch math
+The above command creates a math branch.
 
+$ git checkout iss53
+The above command is used to change to math branch.
 
 ```
    
