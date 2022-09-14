@@ -105,7 +105,7 @@ Step 2: git merge non_master_branch
 $ git branch math
 The above command creates a math branch.
 
-$ git checkout iss53
+$ git checkout math
 The above command is used to change to math branch.
 
 ```
@@ -118,7 +118,7 @@ print 2+2
 
 7. Write a command (or sequence) to commit your changes.
 ```
-
+$ git commit
 
 ```
 
