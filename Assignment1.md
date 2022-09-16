@@ -129,13 +129,15 @@ print 'hello world!'
 
 9. Write a command sequence to merge the `math` branch into `master` and describe what happened.
 ```
+$ git checkout master
 
+$ git merge math
 
 ```
    
 10. Write a set of commands to abort the merge.
 ```
-
+git merge --abort
 
 ```
    
@@ -147,8 +149,14 @@ print 'hello world!'
 
 12. Write a command (or set of commands) to proceed with the merge and make `master` branch up-to-date.
 ```
+$ git checkout master
 
+$ git merge math
 
+$ git checkout master 
+$ git pull 
+$ git checkout -  
+$ git rebase master 
 ```
 
 13. Complete Part 2. Then, come back here and answer the following:
