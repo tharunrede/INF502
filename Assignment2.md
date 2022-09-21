@@ -12,9 +12,9 @@ def pythagoreanTheorem(length_a, length_b):       # creating function signature
     return math.sqrt(length_a**2 + length_b**2)   # calculating the length of Hypotenuse and returning the value
 
 def main():
-    print(pythagoreanTheorem(3,4))
+    print(pythagoreanTheorem(3,4))      #calling the function
     
-main()
+main()      #calling the main function
 
 ```
 In your solution markdown, please provide: a link to the .py file, a commented code, the output of a few examples (3-4).
@@ -37,9 +37,10 @@ def list_mangler(list_in):      #creating function signature
     return output_list   
 
 def main():
-    print(list_mangler([1,2,3,4]))
+    print(list_mangler([1,2,3,4]))      #calling the function
     
-main()
+main()      #calling the main function
+
 ```
 In your solution markdown, please provide: a link to the .py file, a commented code, the output of a few examples (3-4).
 
@@ -71,9 +72,9 @@ def grade_calc(grades_in, to_drop):
        
 
 def main():
-    print(grade_calc([66,54,89,91],2))
+    print(grade_calc([66,54,89,91],2))      #calling the function
     
-main()
+main()      #calling the main function
 
 ```
 In your solution markdown, please provide: a link to the .py file, a commented code, the output of a few examples (3-4).
@@ -101,9 +102,9 @@ def odd_even_filter(numbers):    # creating function signature
        
 
 def main():    
-    print(odd_even_filter([71, 39, 98, 79, 5, 89, 50, 90, 2, 56]))
+    print(odd_even_filter([71, 39, 98, 79, 5, 89, 50, 90, 2, 56]))      #calling the function
     
-main()
+main()      #calling the main function
 
 
 
