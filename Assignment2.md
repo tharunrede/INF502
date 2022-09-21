@@ -5,7 +5,7 @@
 
 The function returns the length of the hypotenuse assuming that `length_a` and `length_b` are the lengths of the two legs of a right triangle (the legs that form the triangle's right angle). Hint: the `math` module might have useful functions to use.
 
-Code File Here.
+[Code File Here.](https://github.com/tharunrede/INF502/blob/main/code/Problem_1_PythagoreanThoerem.py)
 
 Code:
 ```python
@@ -44,7 +44,7 @@ For print(pythagoreanTheorem(11,12))
 
 The function assumes that `list_in` is a list of integers, and returns a new list containing transformed elements of `list_in`. If the element is even, it's doubled. If the element is odd, it's tripled.
 
-Code File Here.
+[Code File Here.](https://github.com/tharunrede/INF502/blob/main/code/Problem_2_ListMangler.py)
 
 Code:
 
@@ -92,7 +92,7 @@ For print(list_mangler([9,13,8,6]))
 
 The function accepts a list `grades_in` containing integer grades, drops the `to_drop` lowest grades (so, for `to_drop` equal to 2, the function should drop the 2 lowest grades), calculates the average of the grades left, and returns the letter grade this average corresponds to according to the letter grade scale for this course.
 
-Code File Here.
+[Code File Here.](https://github.com/tharunrede/INF502/blob/main/code/Problem_3_gradeCalc.py)
 
 Code:
 
@@ -149,7 +149,7 @@ B
 
 The function accepts an input list of integers and returns a list with two sublists. The first sublist contains all even numbers in the input list and the second sublist contains all odd numbers.
 
-Code File Here.
+[Code File Here.](https://github.com/tharunrede/INF502/blob/main/code/Problem_4_oddEvenFilter.py)
 
 For example:
 ```python
