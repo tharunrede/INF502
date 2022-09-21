@@ -5,6 +5,8 @@
 
 The function returns the length of the hypotenuse assuming that `length_a` and `length_b` are the lengths of the two legs of a right triangle (the legs that form the triangle's right angle). Hint: the `math` module might have useful functions to use.
 
+Code File Here.
+
 Code:
 ```python
 import math
@@ -12,16 +14,37 @@ def pythagoreanTheorem(length_a, length_b):       # creating function signature
     return math.sqrt(length_a**2 + length_b**2)   # calculating the length of Hypotenuse and returning the value
 
 def main():
-    print(pythagoreanTheorem(3,4))      #calling the function
+    print("For print(pythagoreanTheorem(3,4))")    
+    print(pythagoreanTheorem(3,4))     #calling the function
     
-main()      #calling the main function
+    print("For print(pythagoreanTheorem(2,2))")
+    print(pythagoreanTheorem(2,2))       #calling the function
+    
+    print("For print(pythagoreanTheorem(11,12))")
+    print(pythagoreanTheorem(11,12))     #calling the function
+    
+    
+main()          #calling main function
 
 ```
-In your solution markdown, please provide: a link to the .py file, a commented code, the output of a few examples (3-4).
+OUTPUT:
+```
+For print(pythagoreanTheorem(3,4))
+5.0
+
+For print(pythagoreanTheorem(2,2))
+2.8284271247461903
+
+For print(pythagoreanTheorem(11,12))
+16.278820596099706
+```
+
 
 **2. Write a function with the following signature:** `list_mangler(list_in)`.
 
 The function assumes that `list_in` is a list of integers, and returns a new list containing transformed elements of `list_in`. If the element is even, it's doubled. If the element is odd, it's tripled.
+
+Code File Here.
 
 Code:
 
@@ -37,16 +60,39 @@ def list_mangler(list_in):      #creating function signature
     return output_list   
 
 def main():
-    print(list_mangler([1,2,3,4]))      #calling the function
+    print("For print(list_mangler([1,2,3,4]))")    
+    print(list_mangler([1,2,3,4]))       #calling the function
+    
+    print("For print(list_mangler([5,10,6,9]))")    
+    print(list_mangler([5,10,6,9]))       #calling the function
+    
+    print("For print(list_mangler([9,13,8,6]))")    
+    print(list_mangler([9,13,8,6]))       #calling the function
+    
+    
     
 main()      #calling the main function
 
+
 ```
-In your solution markdown, please provide: a link to the .py file, a commented code, the output of a few examples (3-4).
+
+OUTPUT:
+```
+For print(list_mangler([1,2,3,4]))
+[3, 4, 9, 8]
+
+For print(list_mangler([5,10,6,9]))
+[15, 20, 12, 27]
+
+For print(list_mangler([9,13,8,6]))
+[27, 39, 16, 12]
+```
 
 **3. Write a function with the following signature:** `grade_calc(grades_in, to_drop)`.
 
 The function accepts a list `grades_in` containing integer grades, drops the `to_drop` lowest grades (so, for `to_drop` equal to 2, the function should drop the 2 lowest grades), calculates the average of the grades left, and returns the letter grade this average corresponds to according to the letter grade scale for this course.
+
+Code File Here.
 
 Code:
 
@@ -72,17 +118,38 @@ def grade_calc(grades_in, to_drop):
        
 
 def main():
-    print(grade_calc([66,54,89,91],2))      #calling the function
+    print("print(grade_calc([66,54,89,91],2))")
+    print(grade_calc([66,54,89,91],2))       #calling the function
+    
+    print("print(grade_calc([55,65,75,85,95],3))")
+    print(grade_calc([55,65,75,85,95],3))       #calling the function
+    
+    print("print(grade_calc([54,76,97,99,75],1))")
+    print(grade_calc([54,76,97,99,75],1))       #calling the function
     
 main()      #calling the main function
 
-```
-In your solution markdown, please provide: a link to the .py file, a commented code, the output of a few examples (3-4).
 
+```
+
+OUTPUT:
+```
+print(grade_calc([66,54,89,91],2))
+A
+
+print(grade_calc([55,65,75,85,95],3))
+A
+
+print(grade_calc([54,76,97,99,75],1))
+B
+
+```
 
 **4. Write a function with the following signature:** `odd_even_filter(numbers)`.
 
 The function accepts an input list of integers and returns a list with two sublists. The first sublist contains all even numbers in the input list and the second sublist contains all odd numbers.
+
+Code File Here.
 
 For example:
 ```python
@@ -102,12 +169,28 @@ def odd_even_filter(numbers):    # creating function signature
        
 
 def main():    
-    print(odd_even_filter([71, 39, 98, 79, 5, 89, 50, 90, 2, 56]))      #calling the function
+    print("For print(odd_even_filter([71, 39, 98, 79, 5, 89, 50, 90, 2, 56])")
+    print(odd_even_filter([71, 39, 98, 79, 5, 89, 50, 90, 2, 56]))    #calling the function
+    
+    print("For print(odd_even_filter([22,6,58,96,21,55,47,63,22,11])")
+    print(odd_even_filter([22,6,58,96,21,55,47,63,22,11]))    #calling the function
+    
+    print("For print(odd_even_filter([48,36,95,7,2,631,41,85,74])")
+    print(odd_even_filter([48,36,95,7,2,631,41,85,74]))    #calling the function
     
 main()      #calling the main function
 
 
-
+```
+OUTPUT:
 
 ```
-In your solution markdown, please provide: a link to the .py file, a commented code, the output of a few examples (3-4).
+For print(odd_even_filter([71, 39, 98, 79, 5, 89, 50, 90, 2, 56])
+([98, 50, 90, 2, 56], [71, 39, 79, 5, 89])
+
+For print(odd_even_filter([22,6,58,96,21,55,47,63,22,11])
+([22, 6, 58, 96, 22], [21, 55, 47, 63, 11])
+
+For print(odd_even_filter([48,36,95,7,2,631,41,85,74])
+([48, 36, 2, 74], [95, 7, 631, 41, 85])
+```
