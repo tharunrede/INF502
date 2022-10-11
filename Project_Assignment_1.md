@@ -102,3 +102,10 @@ highseq2:  --TTAGCTCGA
 
 ```
 
+Hurdles faced during development:
+
+```
+This Project Assignment helped me to understand how to deal with 
+
+
+```
