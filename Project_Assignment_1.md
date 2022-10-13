@@ -105,7 +105,8 @@ highseq2:  --TTAGCTCGA
 Hurdles faced during development:
 
 ```
-This Project Assignment helped me to understand how to deal with 
+
+This Project Assignment helped me to understand how to deal with Sting Handling, Exception Handling, and File Handling. The most challenging part was attaching the strings which were not part of the Strings we were comparing. Overall this assignment helped me to learn how to use loops effectively to handle stings.
 
 
 ```
